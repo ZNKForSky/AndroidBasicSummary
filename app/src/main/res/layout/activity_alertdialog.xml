@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_show_default_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="默认警示框" />
+
+    <Button
+        android:id="@+id/btn_show_sigle_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="单选警示框" />
+
+    <Button
+        android:id="@+id/btn_show_sigle_alert2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="单选警示框2" />
+
+    <Button
+        android:id="@+id/btn_show_multiple_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="多选框" />
+
+    <Button
+        android:id="@+id/btn_show_progress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进度条弹框" />
+
+    <Button
+        android:id="@+id/btn_show_custom_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="半自定义样式的警示框" />
+
+    <Button
+        android:id="@+id/btn_show_custom_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义样式的警示框" />
+</LinearLayout>

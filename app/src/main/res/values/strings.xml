@@ -15,4 +15,5 @@
     <string name="move_my_heart_by_xuan">萱动我心</string>
     <string name="the_oath_of_love">弱水三千只娶萱</string>
     <string name="start_intentservice">Start intentService</string>
+    <string name="title_activity_progressbar">ProgressbarActivity</string>
 </resources>

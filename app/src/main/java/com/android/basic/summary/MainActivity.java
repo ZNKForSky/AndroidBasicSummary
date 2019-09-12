@@ -1,21 +1,23 @@
 package com.android.basic.summary;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.android.basic.summary.activity.AnrActivity;
 import com.android.basic.summary.activity.BaseActivity;
-import com.android.basic.summary.activity.MyActivity;
 import com.android.basic.summary.activity.MyServiceActivity;
+import com.android.basic.summary.activity.ui.ProgressbarActivity;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class MainActivity extends BaseActivity implements AdapterView.OnItemClickListener {
-    private ListView mListView;
+    @BindView(R.id.lv_main)
+    ListView mListView;
     private String[] views = {"Activity", "Service", "Broadcast Receiver", "Content Provider", "ANR"};
     private ArrayAdapter<String> arrayAdapter;
     private final int FLAG_JUMP_TO_ACTIVITY = 0;
@@ -28,14 +30,18 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
         initViews();
         initListeners();
     }
 
     @Override
+    protected int getResLayoutId() {
+        return R.layout.activity_main;
+    }
+
+    @Override
     protected void initViews() {
-        mListView = findViewById(R.id.lv_main);
         arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, views);
         mListView.setAdapter(arrayAdapter);
     }
@@ -53,7 +59,7 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
         switch (position) {
 
             case FLAG_JUMP_TO_ACTIVITY://跳转至活动案例界面
-                intent.setClass(this, MyActivity.class);
+                intent.setClass(this, ProgressbarActivity.class);
                 break;
             case FLAG_JUMP_TO_SERVICE://跳转至服务案例界面
                 intent.setClass(this, MyServiceActivity.class);

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ui.ProgressbarActivity"
+    android:orientation="vertical">
+    <ProgressBar
+        android:layout_marginTop="10dp"
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"/>
+    <Button
+        android:id="@+id/btn_add_progress"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="增加进度"/>
+
+    <Button
+        android:id="@+id/btn2_add_progress"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转至Dialog界面"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

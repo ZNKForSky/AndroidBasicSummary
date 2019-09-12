@@ -187,4 +187,5 @@ RecyclerView's bounds.-->
     <dimen name="size201px">67dp</dimen>
     <dimen name="size204px">68dp</dimen>
     <dimen name="size225px">75dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

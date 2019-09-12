@@ -20,4 +20,51 @@
         <item name="android:layout_height">@dimen/space_1</item>
         <item name="android:background">@color/gray_line</item>
     </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--自定义Dialog样式-->
+    <style name="MyDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--一般TextView公共样式-->
+    <style name="MyTextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--横向View公共样式-->
+    <style name="HorizontalView">
+        <item name="android:layout_height">@dimen/space_1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <!--垂直View公共样式-->
+    <style name="VerticalView">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/space_1</item>
+        <item name="android:background">@color/black</item>
+    </style>
+
 </resources>
