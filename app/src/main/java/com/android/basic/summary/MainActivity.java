@@ -10,6 +10,7 @@ import android.widget.ListView;
 import com.android.basic.summary.activity.AnrActivity;
 import com.android.basic.summary.activity.BaseActivity;
 import com.android.basic.summary.activity.MyServiceActivity;
+import com.android.basic.summary.activity.ZXingActivity;
 import com.android.basic.summary.activity.ui.ProgressbarActivity;
 
 import butterknife.BindView;
@@ -59,7 +60,8 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
         switch (position) {
 
             case FLAG_JUMP_TO_ACTIVITY://跳转至活动案例界面
-                intent.setClass(this, ProgressbarActivity.class);
+                //                intent.setClass(this, ProgressbarActivity.class);
+                intent.setClass(this, ZXingActivity.class);
                 break;
             case FLAG_JUMP_TO_SERVICE://跳转至服务案例界面
                 intent.setClass(this, MyServiceActivity.class);

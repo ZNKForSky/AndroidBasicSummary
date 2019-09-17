@@ -12,8 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity
-            android:name=".activity.ui.ProgressbarActivity"/>
+        <activity android:name=".activity.ui.ProgressbarActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +23,8 @@
         </activity>
         <activity android:name=".activity.PopupWindowActivity" />
         <activity android:name=".activity.AnrActivity" />
-        <activity android:name=".activity.ui.AlertDialogActivity"/>
+        <activity android:name=".activity.ui.AlertDialogActivity" />
+        <activity android:name=".activity.ZXingActivity" />
 
         <service
             android:name=".service.MyService"

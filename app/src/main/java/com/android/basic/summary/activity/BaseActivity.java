@@ -5,6 +5,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import butterknife.ButterKnife;
+
 public abstract class BaseActivity extends AppCompatActivity {
     //获取当前类的类名
     public String TAG = this.getClass().getSimpleName();
@@ -14,6 +16,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Log.i(TAG, "onCreate: current activity is " + TAG);
         setContentView(getResLayoutId());
+        ButterKnife.bind(this);
     }
 
     /**
