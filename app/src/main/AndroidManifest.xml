@@ -3,7 +3,8 @@
     package="com.android.basic.summary">
     <!-- Android 9 或更高版本并使用前台服务的应用必须请求 FOREGROUND_SERVICE 权限。 这是普通权限，因此，系统会自动为请求权限的应用授予此权限。 -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
         android:name=".MyApplication"
         android:allowBackup="true"

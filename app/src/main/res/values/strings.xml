@@ -17,4 +17,8 @@
     <string name="start_intentservice">Start intentService</string>
     <string name="title_activity_progressbar">ProgressbarActivity</string>
     <string name="string_create_qrcode">生成二维码</string>
+    <string name="string_save_qrcode">保存二维码</string>
+    <string name="permissIntro">权限说明</string>
+    <string name="permissIntroContent">保存二维码需要用到存储权限，如果不授予可能会影响正常使用！</string>
+    <string name="permissGive">赋予权限</string>
 </resources>

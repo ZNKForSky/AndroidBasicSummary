@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -12,7 +12,17 @@
         android:text="@string/string_create_qrcode" />
 
     <ImageView
+        android:layout_below="@id/btn_create_qrcode"
         android:id="@+id/iv_qrcode"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-</LinearLayout>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_below="@id/iv_qrcode"
+        android:id="@+id/btn_save_qrcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/string_save_qrcode" />
+</RelativeLayout>

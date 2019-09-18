@@ -27,11 +27,14 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
+    //ButterKnife
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     //Toast工具依赖，解决华为手机关闭通知权限后不弹Toast的Bug
     implementation 'com.hjq:toast:8.0'
-
     //生成二维码
     implementation 'com.google.zxing:core:3.3.0'
+    //权限检测
+    implementation 'com.github.hotchemi:permissionsdispatcher:3.0.1'
+    annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:3.0.1"
 }

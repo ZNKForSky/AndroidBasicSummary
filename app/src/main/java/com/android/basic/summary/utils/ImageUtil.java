@@ -5,6 +5,10 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Environment;
+import android.support.annotation.NonNull;
+import android.util.Log;
+
+import com.hjq.toast.ToastUtils;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -18,6 +22,8 @@ import java.io.IOException;
  * @updateDes 2019/9/17 17:36
  */
 public class ImageUtil {
+    private static final String TAG = "ImageUtil";
+
     /**
      * 保存图片到指定路径
      *
@@ -26,9 +32,11 @@ public class ImageUtil {
      * @param fileName 自定义图片名称
      * @return
      */
-    public static boolean saveImageToGallery(Context context, Bitmap bitmap, String fileName) {
+    public static boolean saveImageToGallery(@NonNull Context context, @NonNull Bitmap bitmap, @NonNull String fileName) {
+
         // 保存图片至指定路径
-        String storePath = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "com.android.basic.summary"+File.separator+"qrcode";
+        String storePath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/android/basic";
+        Log.d(TAG, "saveImageToGallery: storePath == " + storePath);
         File appDir = new File(storePath);
         if (!appDir.exists()) {
             appDir.mkdir();
@@ -36,8 +44,9 @@ public class ImageUtil {
         File file = new File(appDir, fileName);
         try {
             FileOutputStream fos = new FileOutputStream(file);
-            //通过io流的方式来压缩保存图片(80代表压缩20%)
+            //参数说明：压缩后的图片格式--压缩质量，代码中的80代表压缩20%--通过io流的方式来压缩保存图片
             boolean isSuccess = bitmap.compress(Bitmap.CompressFormat.JPEG, 80, fos);
+
             fos.flush();
             fos.close();
 
