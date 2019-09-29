@@ -13,6 +13,7 @@ import com.hjq.toast.ToastUtils;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Date;
 
 /**
  * @author Harris Luffy
@@ -62,5 +63,35 @@ public class ImageUtil {
             e.printStackTrace();
         }
         return false;
+    }
+
+    /**
+     * 获取拍照相片存储文件
+     *
+     * @param context
+     * @return
+     */
+    public static File createFile(Context context) {
+        File file;
+        if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {//判断内存卡可用状态
+            String timeStamp = String.valueOf(new Date().getTime());
+            file = new File(Environment.getExternalStorageDirectory() +
+                    File.separator + timeStamp + ".jpg");
+        } else {//否则放在缓存目录里
+            File cacheDir = context.getCacheDir();
+            String timeStamp = String.valueOf(new Date().getTime());
+            file = new File(cacheDir, timeStamp + ".jpg");
+        }
+        try {
+            if (file.exists()) {
+                //noinspection ResultOfMethodCallIgnored
+                file.delete();
+            }
+            //noinspection ResultOfMethodCallIgnored
+            file.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return file;
     }
 }

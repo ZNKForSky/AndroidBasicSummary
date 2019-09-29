@@ -15,7 +15,7 @@ import java.util.Hashtable;
 /**
  * @author Harris Luffy
  * @version 1.0
- * @des ${TODO}
+ * @des 生成二维码的工具类
  * e-mail : 744423651@qq.com
  * @updateDes 2019/9/17 14:58
  */

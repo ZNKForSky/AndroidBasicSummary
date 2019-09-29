@@ -21,4 +21,18 @@
     <string name="permissIntro">权限说明</string>
     <string name="permissIntroContent">保存二维码需要用到存储权限，如果不授予可能会影响正常使用！</string>
     <string name="permissGive">赋予权限</string>
+    <string name="qrcode_content">二维码内容：</string>
+    <string name="please_input_qrcode_content">请输入二维码内容</string>
+    <string name="qrcode_width">二维码宽度：</string>
+    <string name="qrcode_default_width">默认650</string>
+    <string name="qrcode_height">二维码高度：</string>
+    <string name="qrcode_default_height">默认650</string>
+    <string name="fault_tolerance">容错率：</string>
+    <string name="blank_magin">空白边距：</string>
+    <string name="black_block">黑色色块：</string>
+    <string name="white_block">白色色块：</string>
+    <string name="select_logo">选取logo</string>
+    <string name="select_img_for_black_block">选取代替黑色色块的图片</string>
+    <string name="generate_qrcode">生成二维码</string>
+    <string name="msg_no_camera">您的手机没有安装相机相关应用哟</string>
 </resources>
