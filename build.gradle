@@ -3,9 +3,12 @@
 buildscript {
     
     repositories {
-        maven { url 'https://jitpack.io' }
-        jcenter { url "http://jcenter.bintray.com" }
         google()
+        mavenCentral()
+        mavenLocal()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+//        jcenter { url "http://jcenter.bintray.com" }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.0'
@@ -18,9 +21,12 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter { url "http://jcenter.bintray.com" }
-        maven { url 'https://jitpack.io' }
         google()
+        mavenCentral()
+        mavenLocal()
+        jcenter()
+//        jcenter { url "http://jcenter.bintray.com" }
+        maven { url 'https://jitpack.io' }
     }
 }
 
