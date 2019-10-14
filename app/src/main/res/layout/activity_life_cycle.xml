@@ -4,23 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MyActivity"
+    tools:context=".activity.LifeCycleActivity"
     android:orientation="vertical">
 
-    <android.support.v7.widget.RecyclerView
+    <TextView
         android:layout_weight="1"
-        android:id="@+id/rv_my_activity"
         android:layout_width="match_parent"
-        android:layout_height="0dp" />
-    <EditText
-        android:id="@+id/edt_test"
-        android:layout_margin="@dimen/space_3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="input something"/>
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="正常的活动界面"
+        android:textSize="@dimen/text_max"
+        android:textStyle="bold" />
     <Button
-        android:id="@+id/btn_quit_app"
+        android:id="@+id/btn_start_dialog_activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="退出程序"/>
+        android:text="启动对话框Activity"/>
 </LinearLayout>

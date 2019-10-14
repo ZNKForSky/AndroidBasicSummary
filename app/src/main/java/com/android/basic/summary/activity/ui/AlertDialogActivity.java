@@ -1,10 +1,9 @@
 package com.android.basic.summary.activity.ui;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AlertDialog;
 import android.view.Display;
 import android.view.Gravity;
 import android.view.View;
@@ -32,12 +31,6 @@ public class AlertDialogActivity extends BaseActivity {
     private static final String TAG = "AlertDialogActivity";
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        ButterKnife.bind(this);
-    }
-
-    @Override
     protected int getResLayoutId() {
         return R.layout.activity_alertdialog;
     }
@@ -49,6 +42,11 @@ public class AlertDialogActivity extends BaseActivity {
 
     @Override
     protected void initListeners() {
+
+    }
+
+    @Override
+    protected void initData() {
 
     }
 

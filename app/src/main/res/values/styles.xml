@@ -15,9 +15,9 @@
     </style>
 
     <!--view水平 公共样式  -->
-    <style name="viewh_style">
+    <style name="WhiteViewh">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/space_1</item>
+        <item name="android:layout_height">@dimen/space_3</item>
         <item name="android:background">@color/gray_line</item>
     </style>
 

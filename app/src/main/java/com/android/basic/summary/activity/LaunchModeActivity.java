@@ -18,4 +18,9 @@ public class LaunchModeActivity extends BaseActivity {
     protected void initListeners() {
 
     }
+
+    @Override
+    protected void initData() {
+
+    }
 }

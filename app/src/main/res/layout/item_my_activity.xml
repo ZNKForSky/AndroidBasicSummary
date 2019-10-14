@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_my_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_margin="@dimen/space_10"
+        android:id="@+id/tv_activity_name"
+        style="@style/MyTextView"
+        android:text="第一个Activity" />
+
+    <View style="@style/WhiteViewh" />
+</LinearLayout>

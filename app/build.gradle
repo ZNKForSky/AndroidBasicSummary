@@ -30,7 +30,7 @@ dependencies {
     //ButterKnife
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-    //Toast工具依赖，解决华为手机关闭通知权限后不弹Toast的Bug
+    //Toast工具依赖，解决华为等品牌手机关闭通知权限后不弹Toast的Bug
     implementation 'com.hjq:toast:8.0'
     //生成二维码
     implementation 'com.google.zxing:core:3.3.0'

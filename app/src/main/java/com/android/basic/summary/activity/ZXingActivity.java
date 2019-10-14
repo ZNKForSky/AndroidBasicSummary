@@ -179,6 +179,11 @@ public class ZXingActivity extends BaseActivity implements AdapterView.OnItemSel
         });
     }
 
+    @Override
+    protected void initData() {
+
+    }
+
     //=======================动态权限的申请========================<
     @NeedsPermission({Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE})
     public void savaQrcode() {

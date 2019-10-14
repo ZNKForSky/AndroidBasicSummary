@@ -43,6 +43,11 @@ public class ProgressbarActivity extends BaseActivity {
 
     }
 
+    @Override
+    protected void initData() {
+
+    }
+
     @OnClick({R.id.btn_add_progress, R.id.btn2_add_progress})
     public void onViewClicked(View view) {
         switch (view.getId()) {
